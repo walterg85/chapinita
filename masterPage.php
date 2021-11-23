@@ -248,7 +248,8 @@
         lang = "en",
         searchRequest = null,
         productLimite = 0,
-        base_url = "<?php echo $base_url; ?>";
+        base_url = "<?php echo $base_url; ?>",
+        currentPage = null;
 
     $(document).ready(function(){       
 
@@ -544,6 +545,7 @@
         });
     }
 
+    // Solo para mostrar TOP CATEGORIES
     function loadCategories(){
         $('#categoriesList').parent().removeClass('d-none');
         let objData = {
@@ -552,9 +554,8 @@
 
         $.post(`${base_url}/core/controllers/category.php`, objData, function(result) {
             $("#categoriesList").html("");
-            $(".listCategories, .footCategorie").html("");
 
-            let jsonData        = result.data;
+            let jsonData = result.data;
 
             if(lang == "es"){
                 jsonData.sort(function (a, b) {
@@ -588,10 +589,6 @@
                     cat.removeClass("d-none catClone");
                     $(cat).appendTo("#categoriesList");
                 }
-
-                let curName = (lang == "en") ? item.name.toUpperCase() : item.nameSp.toUpperCase();
-                $(`<a class="p-2 link-secondary text-decoration-none feature" href="javascript:void(0);" data-catid="${item.id}">${curName}</a>`).appendTo(".listCategories");
-                $(`<li><a class="mb-1"><a class="link-secondary text-decoration-none" href="javascript:void(0);" data-catid="${item.id}">${curName}</a></li>`).appendTo(".footCategorie");
             });
 
             $(".feature").click( function () {
@@ -601,8 +598,8 @@
         });
     }
 
+    // Solo para mostrar las categorias en la cinta y fotter
     function loadCategoriesBar(){
-        $('#categoriesList').parent().removeClass('d-none');
         let objData = {
             "_method":"Get"
         };
@@ -627,10 +624,9 @@
             }
 
             $.each( jsonData, function( index, item){
-
                 let curName = (lang == "en") ? item.name.toUpperCase() : item.nameSp.toUpperCase();
                 $(`<a class="p-2 link-secondary text-decoration-none feature" href="javascript:void(0);" data-catid="${item.id}">${curName}</a>`).appendTo(".listCategories");
-                $(`<li><a class="mb-1"><a class="link-secondary text-decoration-none" href="javascript:void(0);" data-catid="${item.id}">${curName}</a></li>`).appendTo(".footCategorie");
+                $(`<li><a class="mb-1 link-secondary text-decoration-none feature" href="javascript:void(0);" data-catid="${item.id}">${curName}</a></li>`).appendTo(".footCategorie");
             });
 
             $(".feature").click( function () {
@@ -791,6 +787,15 @@
             document.title = myLang.pageTitle;
             if(productLimite > 0)
                 getProducts(productLimite);
+
+            if(currentPage == 'index')
+                loadCategories();
+
+            if(currentPage == 'categories')
+                catProducts();
+
+            if(currentPage == 'products')
+                productDetail();
 
             countCartItem();
             loadCategoriesBar();

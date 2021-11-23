@@ -52,13 +52,16 @@
 </div>
 
 <script>
+    let productId = 0;
     $(document).ready(function(){
         // Recuperar el id del producto seleccionado
         let queryString = window.location.search,
-            urlParams   = new URLSearchParams(queryString),
-            productId   = urlParams.get('pid');
+            urlParams   = new URLSearchParams(queryString);
 
-        productDetail(productId);
+        productId   = urlParams.get('pid');
+        currentPage = 'products';
+
+        productDetail();
 
         $(".btnAddtocart").click(function(){
             let currentItem = $(this).data("item"),
@@ -118,7 +121,7 @@
         });
     });
 
-    function productDetail(productId){
+    function productDetail(){
         let objData = {
             "_method":"getProductId",
             "productId": productId
@@ -131,6 +134,14 @@
 
                 $(".lblName").html(info.name);
                 $(".lblDescription").html(info.descriptions);
+
+                if(lang == "en"){
+                    $(".lblName").html(info.name);
+                    $(".lblDescription").html(info.descriptions);
+                }else{
+                    $(".lblName").html(info.optional_name);
+                    $(".lblDescription").html(info.optional_description);
+                }  
 
                 if( (info.sale_price).length > 0 && info.sale_price > 0){
                     $(".lblPrice").html( formatter.format(info.sale_price) );
@@ -202,7 +213,7 @@
                             dv.find(".lbl").html(item).attr("for", `rd${item}`);
 
                             if(index == 0)
-                                dv.find(".chk").prop("checked", true);
+                                dv.find(".chk").attr("checked", true);
 
                             dv.removeClass("d-none chColorsP");
                             dv.addClass("toRemovec");
