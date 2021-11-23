@@ -2,7 +2,7 @@
 	class Conexion extends PDO
 	{
 		private $host		= '127.0.0.1';
-		private $database	= 'tienda';
+		private $database	= 'chapinita';
 		private $usDb		= 'uname';
 		private $password	= 'bNgGAjd73XsGEDYn';
 

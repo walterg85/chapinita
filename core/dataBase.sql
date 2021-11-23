@@ -19,11 +19,11 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `tienda`
+-- Base de datos: `chapinita`
 --
-DROP DATABASE IF EXISTS `tienda`;
-CREATE DATABASE IF NOT EXISTS `tienda` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `tienda`;
+DROP DATABASE IF EXISTS `chapinita`;
+CREATE DATABASE IF NOT EXISTS `chapinita` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `chapinita`;
 
 -- --------------------------------------------------------
 
