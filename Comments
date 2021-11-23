@@ -1,0 +1,77 @@
+Aqui se imprime todo el contedido de las paginas secundarias capturados del buffer
+Tienda/masterPage.php linea 58
+
+Se inicia el metodo para encapsular todo el contenido de las paginas (bufering), para dar salida al HTML 
+Tienda/index.php linea 2
+
+Invoca al metodo de listar productos declarada en la pagina maestra, se setea un patrametro que indica la cantidad de prodcuto a listar
+Tienda/index.php linea 35
+
+Se obtiene el contenido del bufer
+Tienda/index.php linea 40
+
+Limpiar el bufer para liberar
+Tienda/index.php linea 43
+
+Se carga la pagina maestra para imprimir la pagina global
+Tienda/index.php linea 46
+
+Url raiz, para todas las coneciones al controlador, este se debe cambiar cuando se publica el proecto con una DNS
+Tienda/masterPage.php linea 2
+
+A todas las referencias de directorios locales se le concatena la variable base_url, para indicar la ruta absoluta
+Tienda/masterPage.php linea 187
+
+Recuperar el id de la categoria seleccionada
+Tienda/category.php linea 36
+
+Metodo para listar los productos de la categoria seleccionada
+Tienda/category.php linea 44
+
+Cuando el modal se inicia, se procesa la lista de productos en el carrito
+Tienda/masterPage.php linea 304
+
+Control de mensajes para los ALERTS
+Tienda/admin/product.php linea 189
+
+Ejecutar para redirigir al checkout
+Tienda/masterPage.php linea 261
+
+Ejecutar para redirigir al checkout
+Tienda/category/index.php linea 119
+
+Ejecutar para redirigir al checkout
+Tienda/product/index.php linea 15
+
+Metodo patra iniciar session
+Tienda/admin/login.html linea 54
+
+Cuando se hace click en el boton se ejecuta el metodo de validar login
+Tienda/admin/login.html linea 43
+
+Cuando se hace enter en el inputpassword se ejecuta el metodo de validar login
+Tienda/admin/login.html linea 46
+
+se envia el foco al input password para coregir la contraseña
+Tienda/admin/login.html linea 70
+
+Metodo para ocultar el resultado de la busqueda si se hace click en cualquier parte
+Tienda/admin/index.html linea 197
+
+Metodo para buscar lo escrito en el inputsearch, si ya existe una busqueda previa que no se termina, se cancela y se reinicia
+Tienda/admin/index.html linea 164
+
+Forzar a que se muestre el fondo blanco en el modal del cropperJS
+Tienda/admin/index.html linea 52
+
+Se requiere el modelo de setting para recuperar el id de paypal
+Tienda/checkout/index.php linea 2
+
+Se agrega esta validacion para controlar error de directorios
+Tienda/core/models/setting.php linea 4
+
+Estructura de control para validar que exista el id de paypal
+Tienda/checkout/index.php linea 12
+
+Si no existe el id de paypal, se redirige al index de la tienda
+Tienda/checkout/index.php linea 21

@@ -1,0 +1,58 @@
+{
+	"en":{
+		"buttonText": "Español",
+		"addToCart": "Add To Cart",
+		"home":{
+			"freeShipping": "Free shipping on all orders over $75!",
+			"pageTitle":"Online Store",
+			"checkCart":"Cart",
+			"btnCheckout": "Checkout",
+			"punchLine": "Take 20% OFF on handcraft!",
+			"contactLine": "Contact us for wholesale prices!",
+			"btnContact": "Call Now!",
+			"search": "Search...",
+			"myCart": "My Cart",
+			"btnKeepShopping": "Keep Shopping",
+			"categories": "Top Categories",
+			"products": "Top Products"
+		},
+		"checkout":{
+			"labelSeccion": "Checkout",
+			"lblLetrero": "You have 14 days to return your product if not satisfied.",
+			"labelCart": "Your cart",
+			"labelCoupon": "Apply",
+			"inputCode": "Coupon code",
+			"lalelShip": "Shipping Cost",
+			"strCupon": "Discount",
+			"strTax": "Tax"
+		}
+	},
+	"es":{
+		"buttonText": "English",
+		"addToCart": "Añadir al carrito",
+		"home":{
+			"freeShipping": "Envío gratis para pedidos de $75 o mas!",
+			"pageTitle":"Tienda en line",
+			"checkCart":"Carrito",
+			"btnCheckout": "Pagar",
+			"punchLine": "Obtén 20% de descuento en artesanía!",
+			"contactLine": "Contáctenos para precios al por mayor!", 
+			"btnContact": "Llámenos ahora!",
+			"search": "Buscar...",
+			"myCart": "Mi Carrito",
+			"btnKeepShopping": "Seguir Comprando",
+			"categories": "Categorías Populares",
+			"products": "Productos Populares"
+		},
+		"checkout":{
+			"labelSeccion": "Verificar y pagar",
+			"lblLetrero": "Tiene 14 días para devolver su producto si no está satisfecho.",
+			"labelCart": "Tu pedido",
+			"labelCoupon": "Aplicar",
+			"inputCode": "Codigo de cupon",
+			"lalelShip": "Costo de envio",
+			"strCupon": "Descuento",
+			"strTax": "Impuesto"
+		}
+	}
+}

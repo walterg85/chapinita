@@ -1,0 +1,67 @@
+[22-Nov-2021 11:33:06 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[22-Nov-2021 12:51:18 America/Boise] PHP Warning:  Creating default object from empty value in /home4/chapinit/public_html/core/controllers/setting.php on line 47
+[22-Nov-2021 12:51:38 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 09:41:39 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 09:41:49 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 10:01:33 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 10:11:48 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 10:33:38 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 10:33:53 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 10:46:29 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 10:59:43 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
+[23-Nov-2021 11:00:05 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1142 SELECT command denied to user 'chapinit_admin'@'box5229.bluehost.com' for table 'order' in /home4/chapinit/public_html/core/models/checkout.php:136
+Stack trace:
+#0 /home4/chapinit/public_html/core/models/checkout.php(136): PDOStatement->execute()
+#1 /home4/chapinit/public_html/core/controllers/checkout.php(63): Checkoutmodel->GetOrders()
+#2 {main}
+  thrown in /home4/chapinit/public_html/core/models/checkout.php on line 136
