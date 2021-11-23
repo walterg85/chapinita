@@ -7,7 +7,7 @@
 		public function createOrder($data){
 			$pdo = new Conexion();
 			$cmd = '
-				INSERT INTO tienda.order
+				INSERT INTO chapinita.order
 						(customer_id, amount, ship_price, shipping_address, order_date, payment_data, coupon, status)
 				VALUES
 					(:customer_id, :amount, :ship_price, :shipping_address, now(), :payment_data, :coupon, 1)
@@ -82,7 +82,7 @@
 	    	$pdo = new Conexion();
 
 	    	$cmd = '
-	    		SELECT id, customer_id, amount, ship_price, shipping_address, order_date, payment_data, status FROM tienda.order WHERE id =:order_id
+	    		SELECT id, customer_id, amount, ship_price, shipping_address, order_date, payment_data, status FROM chapinita.order WHERE id =:order_id
 	    	';
 
 	    	$parametros = array(
@@ -98,7 +98,7 @@
 			$cmd = '
 	    		SELECT 
 					p.name, ot.price, ot.quantity, ot.amount, p.thumbnail, ot.selected_options 
-				FROM tienda.order_detail AS ot 
+				FROM chapinita.order_detail AS ot 
 				INNER JOIN product AS p ON ot.product_id = p.id
 				WHERE ot.order_id =:order_id
 	    	';
@@ -129,7 +129,7 @@
 	    	$pdo = new Conexion();
 
 	    	$cmd = '
-	    		SELECT id, customer_id, amount, ship_price, shipping_address, order_date, payment_data, status, coupon, ship_date, shipper_tracking FROM tienda.order
+	    		SELECT id, customer_id, amount, ship_price, shipping_address, order_date, payment_data, status, coupon, ship_date, shipper_tracking FROM chapinita.order
 	    	';
 
 	    	$sql = $pdo->prepare($cmd);
@@ -145,7 +145,7 @@
 	    	$cmd = '
 	    		SELECT 
 					p.name, ot.price, ot.quantity, ot.amount, p.thumbnail, ot.selected_options 
-				FROM tienda.order_detail AS ot 
+				FROM chapinita.order_detail AS ot 
 				INNER JOIN product AS p ON ot.product_id = p.id
 				WHERE ot.order_id =:order_id
 	    	';
@@ -163,7 +163,7 @@
 	    	$pdo = new Conexion();
 
 	    	$cmd = '
-	    		UPDATE tienda.order SET status = 0 WHERE id =:orderId
+	    		UPDATE chapinita.order SET status = 0 WHERE id =:orderId
 	    	';
 
 	    	$parametros = array(
@@ -179,7 +179,7 @@
 	    	$pdo = new Conexion();
 
 	    	$cmd = '
-	    		UPDATE tienda.order SET status = 2, ship_date = now(), shipper_tracking =:tracking   WHERE id =:orderId
+	    		UPDATE chapinita.order SET status = 2, ship_date = now(), shipper_tracking =:tracking   WHERE id =:orderId
 	    	';
 
 	    	$parametros = array(
@@ -196,7 +196,7 @@
 	    	$pdo = new Conexion();
 
 	    	$cmd = '
-	    		UPDATE tienda.order SET status = 3 WHERE id =:orderId
+	    		UPDATE chapinita.order SET status = 3 WHERE id =:orderId
 	    	';
 
 	    	$parametros = array(
