@@ -4,7 +4,7 @@
 ?>
  
 <!-- Products -->
-<h2 class="pb-2 text-center display-6">Product list</h2>
+<h2 class="pb-2 text-center display-6 products">Product list</h2>
 <div class="text-center col-lg-3 col-md-4 col-6 my-3 itemClone d-none">
     <div class="card shadow">
         <div class="badge bg-warning text-white position-absolute d-none brandPrice" style="top: 0.5rem; right: 0.5rem">
@@ -38,6 +38,7 @@
             urlParams = new URLSearchParams(queryString);
         categoryId = urlParams.get('cid');
 
+        currentPage = 'categories';
         catProducts();
     });
 
