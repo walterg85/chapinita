@@ -44,20 +44,19 @@
                     <li><a href="javascript:void(0);" class="nav-link px-2 text-secondary changeLang"><i class="bi bi-globe"></i> Español</a></li>
                 </ul>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-sm-block">
-                    <div class="input-group">
-                        <div class="dropdown">
-                            <input type="text" class="form-control dropdown-toggle" id="inputSearch" placeholder="Search..." autocomplete="off" >
-                            <ul class="dropdown-menu" aria-labelledby="inputSearch"></ul>
-                        </div>
-                        <button class="btn btn-info" type="button"><i class="bi bi-search text-primary"></i></button>
+                <form class="col-12 col-lg-auto mb-lg-0 mt-2 me-lg-3 d-sm-block">
+                    <div class="input-group justify-content-center">
+                        <input type="text" class="form-control border-right-0 border" id="inputSearch" placeholder="Search..." autocomplete="off" >
+                        <ul class="dropdown-menu" aria-labelledby="inputSearch"></ul>
+                        <span class="input-group-append">
+                            <div class="input-group-text bg-info"><i class="bi bi-search"></i></div>
+                        </span>
                     </div>
                 </form>
 
                 <div>
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <li><a type="button" data-bs-toggle="modal" data-bs-target="#mdlCheckCart" class="nav-link px-2 text-secondary" id="checkCart"><i class="bi bi-cart3"></i> Cart</a></li>
-                        <li><a href="javascript:void(2);" class="nav-link px-2 text-secondary d-block d-sm-none"><i class="bi bi-search text-info"></i></a></li>
                         <li><a href="javascript:void(2);" class="nav-link px-2 text-secondary btnCheckout">Checkout</a></li>
                         <!-- <li><a href="javascript:void(2);" class="nav-link px-2 text-secondary"><i class="bi bi-person-circle"></i> My Account</a></li> -->
                     </ul>
@@ -113,20 +112,20 @@
                     <small class="d-block mb-3 text-muted">&copy; <script>document.write(new Date().getFullYear())</script> La Chapinita</small>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Categorias</h5>
+                    <h5 class="category">Category</h5>
                     <ul class="list-unstyled text-small footCategorie"></ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Contact</h5>
+                    <h5 class="contact" >Contact</h5>
                     <ul class="list-unstyled text-small">
                         <li class="mb-1"><a class="link-secondary text-decoration-none" href="tel:18324390684">+18324390684</a></li>
                         <li class="mb-1"><a class="link-secondary text-decoration-none" href="javascript:void(0);">Houston, TX.</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Company Info</h5>
+                    <h5 class="more">More</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1">Contact us for cash payments!</li>
+                        <li class="mb-1 cashPay">Contact us for cash payments!</li>
                         <li class="mb-1"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" class="img-fluid" alt="PayPal Logo"></li>
                     </ul>
                 </div>
@@ -781,7 +780,11 @@
             $("#myCart").html(myLang.myCart);
             $(".btnKeepShopping").html(myLang.btnKeepShopping);
             $(".categories").html(myLang.categories);
+            $(".category").html(myLang.category);
+            $(".contact").html(myLang.contact);
             $(".products").html(myLang.products);
+            $(".more").html(myLang.more);
+            $(".cashPay").html(myLang.cashPay);
 
             // Page title
             document.title = myLang.pageTitle;

@@ -14,7 +14,11 @@
 			"myCart": "My Cart",
 			"btnKeepShopping": "Keep Shopping",
 			"categories": "Top Categories",
-			"products": "Top Products"
+			"products": "Top Products",
+			"category": "Category",
+			"contact": "Contact",
+			"more": "More",
+			"cashPay": "Contact us for cash payments!"
 		},
 		"checkout":{
 			"labelSeccion": "Checkout",
@@ -42,7 +46,11 @@
 			"myCart": "Mi Carrito",
 			"btnKeepShopping": "Seguir Comprando",
 			"categories": "Categorías Populares",
-			"products": "Productos Populares"
+			"products": "Productos Populares",
+			"category": "Categorías",			
+			"contact": "Contacto",
+			"more": "Más",
+			"cashPay": "Contáctenos para pagos en efectivo!"
 		},
 		"checkout":{
 			"labelSeccion": "Verificar y pagar",
